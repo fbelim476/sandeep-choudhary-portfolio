@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <style>
 :where([class^="ri-"])::before { content: "\f3c2"; }
 body { font-family: 'Inter', sans-serif; }
@@ -81,7 +82,10 @@ background: linear-gradient(45deg, transparent 49%, rgba(43, 44, 79, 0.05) 50%, 
 <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
 <a href="#expertise" class="text-gray-600 hover:text-primary transition-colors">Expertise</a>
 <a href="#services" class="text-gray-600 hover:text-primary transition-colors">Services</a>
-<a href="#experience" class="text-gray-600 hover:text-primary transition-colors">Experience</a>
+    <a href="#fitag" class="text-gray-600 hover:text-primary transition-colors">Invited on FITAG</a>
+    <a href="#experience" class="text-gray-600 hover:text-primary transition-colors">Experience</a>
+    <a href="#tools" class="text-gray-600 hover:text-primary transition-colors">Tools</a>
+    <a href="#workshops" class="text-gray-600 hover:text-primary transition-colors">Workshops</a>
 <a href="#appointments" class="text-gray-600 hover:text-primary transition-colors">Book Consultation</a>
 <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
 </div>
@@ -95,7 +99,10 @@ background: linear-gradient(45deg, transparent 49%, rgba(43, 44, 79, 0.05) 50%, 
 <a href="#about" class="block text-gray-600 hover:text-primary transition-colors">About</a>
 <a href="#expertise" class="block text-gray-600 hover:text-primary transition-colors">Expertise</a>
 <a href="#services" class="block text-gray-600 hover:text-primary transition-colors">Services</a>
-<a href="#experience" class="block text-gray-600 hover:text-primary transition-colors">Experience</a>
+<a href="#fitag" class="block text-gray-600 hover:text-primary transition-colors">Invited on FITAG</a>
+    <a href="#experience" class="block text-gray-600 hover:text-primary transition-colors">Experience</a>
+    <a href="#tools" class="block text-gray-600 hover:text-primary transition-colors">Tools</a>
+    <a href="#workshops" class="block text-gray-600 hover:text-primary transition-colors">Workshops</a>
 <a href="#appointments" class="block text-gray-600 hover:text-primary transition-colors">Book Consultation</a>
 <a href="#contact" class="block text-gray-600 hover:text-primary transition-colors">Contact</a>
 </div>
@@ -125,27 +132,41 @@ background: linear-gradient(45deg, transparent 49%, rgba(43, 44, 79, 0.05) 50%, 
 <div class="floating-element">
 <h2 class="text-4xl font-bold gradient-text mb-8">About Me</h2>
 <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-I help individuals and organizations solve real problems through Project Management, Operational Excellence, Quality Transformation, Leadership Coaching, and Career Development. With hands-on experience leading projects across industries and multiple global certifications, I focus on building systems, simplifying complexity, and enabling sustainable growth.
+Transformation is not a buzzword for me.
+</p>
+<p class="text-lg text-gray-600 mb-6 leading-relaxed">
+It’s a disciplined system.
+</p>
+<p class="text-lg text-gray-600 mb-6 leading-relaxed">
+After years of leading projects, quality programs, and operational transformations, I’ve learned that sustainable results come from aligning people, process, technology, and data — not chasing tools or trends.
+</p>
+<p class="text-lg text-gray-600 mb-6 leading-relaxed">
+I am a Master Black Belt Six Sigma certified, PMP-trained Project Manager and Operations Leader with a strong track record of delivering enterprise-level impact. My experience spans large-scale project delivery, process re-engineering, automation, analytics, and leadership development across global organizations.
 </p>
 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-My approach combines proven methodologies with practical implementation strategies to deliver measurable results. I believe in transforming theory into actionable solutions that drive real business impact and personal development success.
+What defines my work is not just execution, but intent: to simplify complexity, remove waste, empower teams, and build systems that perform even when leadership is not in the room.
 </p>
 <div class="grid grid-cols-2 gap-6">
 <div>
-<h3 class="font-semibold text-gray-900 mb-2">Global Certifications</h3>
-<p class="text-gray-600">BE + MBA, LSS MBB, TQM, Six Sigma, CISA, CAPM, PMI-ACP</p>
+<h3 class="font-semibold text-gray-900 mb-2">Highlights</h3>
+<ul class="text-gray-600 space-y-1">
+   146|<li>7+ years experience</li>
+   147|<li>Healthcare, IT, Analytics exposure</li>
+   148|<li>Project Management + Quality + Operations</li>
+   149|</ul>
 </div>
 <div>
-<h3 class="font-semibold text-gray-900 mb-2">Industries Served</h3>
-<p class="text-gray-600">Multiple Global Organizations</p>
+<h3 class="font-semibold text-gray-900 mb-2">Education Badges</h3>
+<p class="text-gray-600">🥇 Engineering Gold Medalist</p>
+   154|<p class="text-gray-600">🥈 MBA Silver Medalist</p>
 </div>
 </div>
 </div>
 <div class="flex justify-center">
 <div class="card-3d">
-<img src="image01.jpg"
+<img src="assets/images/my-img.jpeg"
 alt="Sandeep Choudhary"
-class="rounded-2xl shadow-3d object-cover w-80 h-96">
+class="rounded-2xl shadow-3d object-cover w-100 h-200">
 </div>
 </div>
 </div>
@@ -153,285 +174,616 @@ class="rounded-2xl shadow-3d object-cover w-80 h-96">
 </section>
 <section id="skills" class="py-20 section-divider">
 <div class="max-w-6xl mx-auto px-6">
-<h2 class="text-4xl font-bold gradient-text text-center mb-16">Core Expertise</h2>
-<div class="grid md:grid-cols-3 gap-8">
+<h2 class="text-4xl font-bold gradient-text text-center mb-16">Services & Expertise</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
-<h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-primary to-blue-600 rounded-xl">
-<i class="ri-settings-line text-white text-xl"></i>
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-projector-2-line text-white text-xl"></i>
 </div>
-Project Management
+Project Management & PMO Consulting
 </h3>
-<div class="flex flex-wrap gap-3">
-<span class="bg-gradient-to-r from-primary/10 to-blue-100 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Agile & Scrum</span>
-<span class="bg-gradient-to-r from-primary/10 to-blue-100 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Risk Management</span>
-<span class="bg-gradient-to-r from-primary/10 to-blue-100 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Stakeholder Management</span>
-<span class="bg-gradient-to-r from-primary/10 to-blue-100 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Resource Planning</span>
-<span class="bg-gradient-to-r from-primary/10 to-blue-100 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Budget Management</span>
-<span class="bg-gradient-to-r from-primary/10 to-blue-100 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Quality Assurance</span>
-</div>
+<p class="text-gray-600">Streamline project delivery, optimize resource allocation, and enhance portfolio governance to achieve strategic objectives and drive business growth.</p>
 </div>
 <div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
-<h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
 <i class="ri-line-chart-line text-white text-xl"></i>
 </div>
-Operational Excellence
+Operational Excellence & Process Transformation
 </h3>
-<div class="flex flex-wrap gap-3">
-<span class="bg-gradient-to-r from-green-50 to-emerald-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Six Sigma</span>
-<span class="bg-gradient-to-r from-green-50 to-emerald-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Lean Management</span>
-<span class="bg-gradient-to-r from-green-50 to-emerald-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Process Optimization</span>
-<span class="bg-gradient-to-r from-green-50 to-emerald-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">TQM</span>
-<span class="bg-gradient-to-r from-green-50 to-emerald-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">DMAIC</span>
-<span class="bg-gradient-to-r from-green-50 to-emerald-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Kaizen</span>
-</div>
+<p class="text-gray-600">Implement Lean Six Sigma methodologies to eliminate waste, improve efficiency, and foster a culture of continuous improvement for measurable operational gains.</p>
 </div>
 <div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
-<h3 class="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-award-line text-white text-xl"></i>
+</div>
+Quality Management & Six Sigma Consulting
+</h3>
+<p class="text-gray-600">Develop robust quality frameworks and execute data-driven strategies to minimize defects, ensure compliance, and elevate product/service quality.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
 <i class="ri-user-star-line text-white text-xl"></i>
 </div>
-Leadership & Development
+Leadership Development & Coaching
 </h3>
-<div class="flex flex-wrap gap-3">
-<span class="bg-gradient-to-r from-purple-50 to-indigo-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Executive Coaching</span>
-<span class="bg-gradient-to-r from-purple-50 to-indigo-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Team Building</span>
-<span class="bg-gradient-to-r from-purple-50 to-indigo-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Change Management</span>
-<span class="bg-gradient-to-r from-purple-50 to-indigo-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Performance Management</span>
-<span class="bg-gradient-to-r from-purple-50 to-indigo-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Strategic Planning</span>
-<span class="bg-gradient-to-r from-purple-50 to-indigo-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Organizational Development</span>
+<p class="text-gray-600">Cultivate high-impact leaders through personalized coaching and development programs that enhance strategic thinking and team performance.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-user-line text-white text-xl"></i>
+</div>
+Career Development Coaching
+</h3>
+<p class="text-gray-600">Guide professionals in career pathing, skill enhancement, and strategic networking to unlock their full potential and achieve advancement.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-team-line text-white text-xl"></i>
+</div>
+Corporate Training
+</h3>
+<p class="text-gray-600">Deliver tailored corporate training programs in project management, operational excellence, and leadership to upskill teams and boost organizational capability.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-customer-service-2-line text-white text-xl"></i>
+</div>
+Customer Experience & Support Optimization
+</h3>
+<p class="text-gray-600">Redesign customer journeys, optimize support processes, and implement feedback mechanisms to enhance satisfaction and loyalty.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-briefcase-line text-white text-xl"></i>
+</div>
+Business Consulting
+</h3>
+<p class="text-gray-600">Provide strategic insights and actionable plans to navigate market challenges, seize growth opportunities, and achieve sustainable competitive advantage.</p>
 </div>
 </div>
+</section>
+<section id="skills" class="py-20 section-divider">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold gradient-text text-center mb-16">Services & Expertise</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-projector-2-line text-white text-xl"></i>
+</div>
+Project Management & PMO Consulting
+</h3>
+<p class="text-gray-600">Streamline project delivery, optimize resource allocation, and enhance portfolio governance to achieve strategic objectives and drive business growth.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-line-chart-line text-white text-xl"></i>
+</div>
+Operational Excellence & Process Transformation
+</h3>
+<p class="text-gray-600">Implement Lean Six Sigma methodologies to eliminate waste, improve efficiency, and foster a culture of continuous improvement for measurable operational gains.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-award-line text-white text-xl"></i>
+</div>
+Quality Management & Six Sigma Consulting
+</h3>
+<p class="text-gray-600">Develop robust quality frameworks and execute data-driven strategies to minimize defects, ensure compliance, and elevate product/service quality.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-user-star-line text-white text-xl"></i>
+</div>
+Leadership Development & Coaching
+</h3>
+<p class="text-gray-600">Cultivate high-impact leaders through personalized coaching and development programs that enhance strategic thinking and team performance.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-user-line text-white text-xl"></i>
+</div>
+Career Development Coaching
+</h3>
+<p class="text-gray-600">Guide professionals in career pathing, skill enhancement, and strategic networking to unlock their full potential and achieve advancement.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-team-line text-white text-xl"></i>
+</div>
+Corporate Training
+</h3>
+<p class="text-gray-600">Deliver tailored corporate training programs in project management, operational excellence, and leadership to upskill teams and boost organizational capability.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-customer-service-2-line text-white text-xl"></i>
+</div>
+Customer Experience & Support Optimization
+</h3>
+<p class="text-gray-600">Redesign customer journeys, optimize support processes, and implement feedback mechanisms to enhance satisfaction and loyalty.</p>
+</div>
+<div class="card-3d bg-white p-8 rounded-2xl shadow-3d">
+<h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+<div class="w-12 h-12 flex items-center justify-center mr-4 bg-gradient-to-r from-blue-700 to-teal-600 rounded-xl">
+<i class="ri-briefcase-line text-white text-xl"></i>
+</div>
+Business Consulting
+</h3>
+<p class="text-gray-600">Provide strategic insights and actionable plans to navigate market challenges, seize growth opportunities, and achieve sustainable competitive advantage.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="fitag" class="py-20 bg-gray-100 section-divider">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold gradient-text text-center mb-4">Invited on FITAG 2026</h2>
+<p class="text-lg text-gray-700 text-center mb-16">Industry Recognition & Knowledge Sharing Platform</p>
+
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <!-- Slide 1 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/1.jpeg" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Invited Speaker – FITAG 2026</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Invited to participate in FITAG 2026, a platform bringing together industry leaders, professionals, and innovators to share insights on transformation, operational excellence, and future-ready enterprises."</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/2.jpeg" alt="Industry Exposure & Professional Networking" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Industry Exposure & Professional Networking</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Active participation in industry forums and events focused on process excellence, analytics, leadership, and enterprise transformation."</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/3.jpeg" alt="Knowledge Sharing & Continuous Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Knowledge Sharing & Continuous Learning</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Engagement with global professionals to exchange best practices, emerging trends, and real-world implementation strategies."</p>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/4.jpeg" alt="Knowledge Sharing & Continuous Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Knowledge Sharing & Continuous Learning</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Engagement with global professionals to exchange best practices, emerging trends, and real-world implementation strategies."</p>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/5.jpeg" alt="Knowledge Sharing & Continuous Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Knowledge Sharing & Continuous Learning</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Engagement with global professionals to exchange best practices, emerging trends, and real-world implementation strategies."</p>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/6.jpeg" alt="Knowledge Sharing & Continuous Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Knowledge Sharing & Continuous Learning</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Engagement with global professionals to exchange best practices, emerging trends, and real-world implementation strategies."</p>
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/7.jpeg" alt="Knowledge Sharing & Continuous Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Knowledge Sharing & Continuous Learning</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Engagement with global professionals to exchange best practices, emerging trends, and real-world implementation strategies."</p>
+      </div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/8.jpeg" alt="Knowledge Sharing & Continuous Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Knowledge Sharing & Continuous Learning</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Engagement with global professionals to exchange best practices, emerging trends, and real-world implementation strategies."</p>
+      </div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="swiper-slide bg-white p-8 rounded-2xl shadow-3d flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="md:w-1/2">
+        <img src="assets/images/9.jpeg" alt="Knowledge Sharing & Continuous Learning" class="rounded-xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Knowledge Sharing & Continuous Learning</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">"Engagement with global professionals to exchange best practices, emerging trends, and real-world implementation strategies."</p>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Navigation -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
 </div>
 </div>
 </section>
 <section id="projects" class="py-20 bg-gray-50 section-divider">
 <div class="max-w-6xl mx-auto px-6">
-<h2 class="text-4xl font-bold gradient-text text-center mb-16">Success Stories</h2>
+<h2 class="text-4xl font-bold gradient-text text-center mb-16">Key Projects & Impact</h2>
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 <div class="card-3d bg-white rounded-2xl shadow-3d p-8">
-<img src="https://readdy.ai/api/search-image?query=Corporate%20business%20transformation%20project%20success%20metrics%20dashboard%2C%20professional%20analytics%20interface%2C%20growth%20charts%2C%20KPI%20visualization%2C%20modern%20office%20setting%2C%20clean%20business%20environment%2C%20strategic%20planning%20elements&width=400&height=250&seq=project001&orientation=landscape"
-alt="Digital Transformation Project"
-class="w-full h-48 object-cover rounded-xl mb-6 shadow-lg">
-<h3 class="text-xl font-semibold text-gray-900 mb-3">Digital Transformation Initiative</h3>
-<p class="text-gray-600 mb-4">Led enterprise-wide digital transformation resulting in 40% efficiency improvement and $2M cost savings.</p>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Agile Implementation</span>
-<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Six Sigma</span>
-<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Change Management</span>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Healthcare Process Optimization (DMAIC)</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">Inefficient patient admission process leading to long wait times and reduced satisfaction.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Implemented DMAIC methodology to analyze and redesign the process, focusing on key bottlenecks and waste reduction.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Reduced patient admission time by 30%, increasing patient satisfaction by 15% and improving staff productivity.</p>
 </div>
+<div class="card-3d bg-white rounded-2xl shadow-3d p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">IT Service Workflow Optimization (Agile + Six Sigma)</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">Slow IT service request fulfillment and high error rates impacting operational efficiency.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Integrated Agile and Six Sigma principles to streamline workflow, automate repetitive tasks, and implement continuous feedback loops.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Decreased service request resolution time by 25% and reduced critical errors by 20%, enhancing IT service delivery.</p>
 </div>
-<div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow p-6">
-<img src="https://readdy.ai/api/search-image?query=Task%20management%20application%20dashboard%20on%20computer%20screen%2C%20project%20tracking%20interface%2C%20team%20collaboration%20tools%2C%20modern%20productivity%20app%20design%2C%20organized%20layout&width=400&height=250&seq=project002&orientation=landscape"
-alt="Task Management App"
-class="w-full h-48 object-cover rounded-lg mb-4">
-<h3 class="text-xl font-semibold text-gray-900 mb-3">Task Management App</h3>
-<p class="text-gray-600 mb-4">Collaborative project management tool with real-time updates, team chat, and progress tracking.</p>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Vue.js</span>
-<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Socket.io</span>
-<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">MongoDB</span>
+<div class="card-3d bg-white rounded-2xl shadow-3d p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Cost Center Optimization & Workforce Efficiency</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">Rising operational costs and underutilized workforce capacity in a key cost center.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Conducted a comprehensive analysis of cost drivers and workforce allocation, implementing targeted efficiency programs and training initiatives.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Achieved 18% cost reduction and improved workforce utilization by 22%, delivering significant financial savings.</p>
 </div>
+<div class="card-3d bg-white rounded-2xl shadow-3d p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Contact Center Process Modernization</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">Outdated contact center processes leading to high agent attrition and low customer satisfaction scores.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Modernized call routing, integrated new CRM tools, and introduced advanced agent training with a focus on first-call resolution.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Increased customer satisfaction by 20% and reduced agent turnover by 15%, enhancing service quality and retention.</p>
 </div>
-<div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow p-6">
-<img src="https://readdy.ai/api/search-image?query=Financial%20analytics%20dashboard%20with%20charts%20and%20graphs%20on%20monitor%2C%20data%20visualization%20interface%2C%20business%20intelligence%20platform%2C%20modern%20fintech%20application%20design&width=400&height=250&seq=project003&orientation=landscape"
-alt="Analytics Dashboard"
-class="w-full h-48 object-cover rounded-lg mb-4">
-<h3 class="text-xl font-semibold text-gray-900 mb-3">Analytics Dashboard</h3>
-<p class="text-gray-600 mb-4">Real-time data visualization platform with interactive charts and comprehensive reporting features.</p>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">Next.js</span>
-<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">D3.js</span>
-<span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">PostgreSQL</span>
+<div class="card-3d bg-white rounded-2xl shadow-3d p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Enterprise PMO Governance Setup</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">Lack of standardized project management processes across the enterprise, leading to inconsistent project outcomes.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Established an Enterprise Project Management Office (EPMO) with clear governance frameworks, standardized methodologies, and centralized reporting.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Improved project success rates by 25% and enhanced portfolio visibility, leading to better strategic alignment and resource utilization.</p>
 </div>
+<div class="card-3d bg-white rounded-2xl shadow-3d p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">AI-Enabled Quality Monitoring Framework</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">Manual and time-consuming quality monitoring processes in a large operational unit.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Designed and implemented an AI-powered framework for automated quality monitoring, leveraging machine learning for anomaly detection and performance insights.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Automated 70% of quality checks, reducing monitoring effort by 50% and increasing detection accuracy by 30%.</p>
+</div>
+<div class="card-3d bg-white rounded-2xl shadow-3d p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">CX Analytics & VOC Transformation</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">Limited understanding of customer pain points and lack of actionable insights from customer feedback.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Developed a comprehensive Customer Experience (CX) analytics platform and Voice of Customer (VOC) program, integrating data from multiple touchpoints.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Identified key areas for improvement, leading to a 10% increase in customer retention and a 12% boost in Net Promoter Score (NPS).</p>
+</div>
+<div class="card-3d bg-white rounded-2xl shadow-3d p-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Automation-Led Cost Reduction Program</h3>
+<p class="text-gray-600 mb-2 font-semibold">Problem:</p>
+<p class="text-gray-600 mb-4">High operational expenditure due to manual, repetitive tasks across various departments.</p>
+<p class="text-gray-600 mb-2 font-semibold">Approach:</p>
+<p class="text-gray-600 mb-4">Led an automation initiative, deploying Robotic Process Automation (RPA) and intelligent automation tools to streamline business processes.</p>
+<p class="text-gray-600 mb-2 font-semibold">Outcome:</p>
+<p class="text-gray-600">Achieved annual savings of $1.5M through automation, redirecting resources to high-value strategic activities.</p>
 </div>
 </div>
 </div>
 </section>
 <section id="experience" class="py-20">
 <div class="max-w-6xl mx-auto px-6">
-<h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Experience & Services</h2>
-<div class="grid lg:grid-cols-2 gap-12">
+<h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Certifications & Credentials</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 <div>
-<h3 class="text-2xl font-semibold text-gray-900 mb-8">Professional Experience</h3>
-<div class="space-y-8">
-<div class="border-l-4 border-primary pl-6">
-<h4 class="text-lg font-semibold text-gray-900">Senior Full Stack Developer</h4>
-<p class="text-primary font-medium">TechCorp Solutions • 2022 - Present</p>
-<p class="text-gray-600 mt-2">Leading development of enterprise web applications, mentoring junior developers, and architecting scalable solutions for clients across various industries.</p>
-</div>
-<div class="border-l-4 border-gray-300 pl-6">
-<h4 class="text-lg font-semibold text-gray-900">Full Stack Developer</h4>
-<p class="text-gray-600 font-medium">Digital Innovations Inc • 2020 - 2022</p>
-<p class="text-gray-600 mt-2">Developed and maintained multiple client projects, implemented CI/CD pipelines, and collaborated with design teams to create user-friendly interfaces.</p>
-</div>
-<div class="border-l-4 border-gray-300 pl-6">
-<h4 class="text-lg font-semibold text-gray-900">Frontend Developer</h4>
-<p class="text-gray-600 font-medium">StartupLab • 2019 - 2020</p>
-<p class="text-gray-600 mt-2">Built responsive web applications using modern JavaScript frameworks, optimized performance, and ensured cross-browser compatibility.</p>
-</div>
+<h3 class="font-semibold text-gray-900 mb-4">Certifications</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Six Sigma Black Belt</span>
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Six Sigma Master Black Belt</span>
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Total Quality Management (TQM)</span>
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">PMP Trained</span>
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">CAPM</span>
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">CPHQ</span>
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">CHQE</span>
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">CISA</span>
 </div>
 </div>
 <div>
-<h3 class="text-2xl font-semibold text-gray-900 mb-8">Services Offered</h3>
-<div class="grid gap-6">
-<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-<div class="w-12 h-12 flex items-center justify-center bg-blue-50 rounded-lg mb-4">
-<i class="ri-code-s-slash-line text-primary text-xl"></i>
-</div>
-<h4 class="text-lg font-semibold text-gray-900 mb-2">Web Development</h4>
-<p class="text-gray-600">Custom web applications built with modern frameworks and best practices.</p>
-</div>
-<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-<div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-lg mb-4">
-<i class="ri-api-line text-green-600 text-xl"></i>
-</div>
-<h4 class="text-lg font-semibold text-gray-900 mb-2">API Development</h4>
-<p class="text-gray-600">RESTful APIs and GraphQL endpoints for seamless data integration.</p>
-</div>
-<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-<div class="w-12 h-12 flex items-center justify-center bg-purple-50 rounded-lg mb-4">
-<i class="ri-settings-3-line text-purple-600 text-xl"></i>
-</div>
-<h4 class="text-lg font-semibold text-gray-900 mb-2">CMS Solutions</h4>
-<p class="text-gray-600">Content management systems tailored to your specific needs.</p>
-</div>
+<h3 class="font-semibold text-gray-900 mb-4">Data & Analytics</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">Power BI</span>
+<span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">Tableau</span>
+<span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">Advanced Excel / VBA</span>
+<span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="appointments" class="py-20 bg-white">
+<section id="awards" class="py-20 bg-white section-divider">
 <div class="max-w-6xl mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold text-gray-900 mb-6">Book a Consultation</h2>
-<p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-Ready to transform your business or accelerate your career? Schedule a consultation to discuss your specific challenges and discover how my expertise can help you achieve your goals.
-</p>
-</div>
-<div class="grid lg:grid-cols-2 gap-12 items-start">
-<div class="space-y-8">
-<div class="bg-gradient-to-br from-primary/5 to-blue-50 p-8 rounded-2xl">
-<h3 class="text-2xl font-semibold text-gray-900 mb-6">Consultation Types</h3>
-<div class="space-y-6">
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0 mt-1">
-<i class="ri-organization-chart text-primary text-xl"></i>
-</div>
+<h2 class="text-4xl font-bold gradient-text text-center mb-16">Awards & Achievements</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-medal-fill text-yellow-500 text-3xl"></i>
 <div>
-<h4 class="font-semibold text-gray-900 mb-2">Project Management Consultation</h4>
-<p class="text-gray-600 text-sm">Strategic project planning, risk assessment, and implementation roadmaps tailored to your organization.</p>
-<span class="inline-block mt-2 text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">60 minutes</span>
+<h4 class="font-semibold text-gray-900">Excellence in Project Delivery Award</h4>
+<p class="text-gray-600 text-sm">2025</p>
 </div>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0 mt-1">
-<i class="ri-line-chart-line text-primary text-xl"></i>
-</div>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-trophy-line text-yellow-500 text-3xl"></i>
 <div>
-<h4 class="font-semibold text-gray-900 mb-2">Operational Excellence Review</h4>
-<p class="text-gray-600 text-sm">Process optimization, quality transformation strategies, and efficiency improvement recommendations.</p>
-<span class="inline-block mt-2 text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full">90 minutes</span>
+<h4 class="font-semibold text-gray-900">Customer Impact Champion Award</h4>
+<p class="text-gray-600 text-sm">2025</p>
 </div>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0 mt-1">
-<i class="ri-user-star-line text-primary text-xl"></i>
-</div>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-lightbulb-line text-yellow-500 text-3xl"></i>
 <div>
-<h4 class="font-semibold text-gray-900 mb-2">Leadership Coaching Session</h4>
-<p class="text-gray-600 text-sm">Personal leadership development, career advancement strategies, and skill enhancement guidance.</p>
-<span class="inline-block mt-2 text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">45 minutes</span>
+<h4 class="font-semibold text-gray-900">PMO Innovation Award</h4>
+<p class="text-gray-600 text-sm">2024</p>
 </div>
 </div>
-<div class="flex items-start space-x-4">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg flex-shrink-0 mt-1">
-<i class="ri-phone-line text-primary text-xl"></i>
-</div>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-star-line text-yellow-500 text-3xl"></i>
 <div>
-<h4 class="font-semibold text-gray-900 mb-2">Quick Strategy Call</h4>
-<p class="text-gray-600 text-sm">Brief discussion to understand your challenges and explore potential solutions and next steps.</p>
-<span class="inline-block mt-2 text-xs bg-orange-100 text-orange-700 px-3 py-1 rounded-full">30 minutes</span>
+<h4 class="font-semibold text-gray-900">Operational Excellence Award</h4>
+<p class="text-gray-600 text-sm">2024</p>
 </div>
 </div>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-award-fill text-yellow-500 text-3xl"></i>
+<div>
+<h4 class="font-semibold text-gray-900">Rising Project Leader Award</h4>
+<p class="text-gray-600 text-sm">2023</p>
 </div>
 </div>
-<div class="bg-gray-50 p-8 rounded-2xl">
-<h3 class="text-xl font-semibold text-gray-900 mb-4">What to Expect</h3>
-<ul class="space-y-3 text-gray-600">
-<li class="flex items-start space-x-3">
-<i class="ri-check-line text-primary text-lg mt-0.5"></i>
-<span>Detailed analysis of your current situation and challenges</span>
-</li>
-<li class="flex items-start space-x-3">
-<i class="ri-check-line text-primary text-lg mt-0.5"></i>
-<span>Customized recommendations based on proven methodologies</span>
-</li>
-<li class="flex items-start space-x-3">
-<i class="ri-check-line text-primary text-lg mt-0.5"></i>
-<span>Clear action plan with prioritized next steps</span>
-</li>
-<li class="flex items-start space-x-3">
-<i class="ri-check-line text-primary text-lg mt-0.5"></i>
-<span>Follow-up resources and implementation guidance</span>
-</li>
-</ul>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-leaf-line text-yellow-500 text-3xl"></i>
+<div>
+<h4 class="font-semibold text-gray-900">Lean Improvement Star Award</h4>
+<p class="text-gray-600 text-sm">2022</p>
 </div>
 </div>
-<div class="bg-white border-2 border-gray-100 rounded-2xl p-8 shadow-lg">
-<div class="text-center mb-8">
-<h3 class="text-2xl font-semibold text-gray-900 mb-4">Schedule Your Consultation</h3>
-<p class="text-gray-600">Choose a convenient time that works for you. All consultations are conducted via video call for maximum flexibility.</p>
-</div>
-<div class="calendly-widget-container">
-<div class="bg-gradient-to-br from-primary/5 to-blue-50 p-8 rounded-xl text-center">
-<div class="w-16 h-16 flex items-center justify-center bg-primary/10 rounded-full mx-auto mb-6">
-<i class="ri-calendar-check-line text-primary text-2xl"></i>
-</div>
-<h4 class="text-xl font-semibold text-gray-900 mb-4">Ready to Get Started?</h4>
-<p class="text-gray-600 mb-6">Click below to access my calendar and book your preferred consultation time.</p>
-<a href="https://calendly.com/"
-target="_blank"
-rel="noopener noreferrer"
-class="inline-flex items-center bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-blue-700 transition-colors whitespace-nowrap text-lg">
-<i class="ri-calendar-line text-xl mr-3"></i>
-Book Appointment
-</a>
-</div>
-<div class="mt-8 pt-8 border-t border-gray-100">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center text-sm text-gray-600">
-<div class="flex items-center justify-center space-x-2">
-<i class="ri-shield-check-line text-primary"></i>
-<span>Secure & Confidential</span>
-</div>
-<div class="flex items-center justify-center space-x-2">
-<i class="ri-time-line text-primary"></i>
-<span>Flexible Scheduling</span>
-</div>
-<div class="flex items-center justify-center space-x-2">
-<i class="ri-video-line text-primary"></i>
-<span>Virtual Meetings</span>
-</div>
-<div class="flex items-center justify-center space-x-2">
-<i class="ri-customer-service-2-line text-primary"></i>
-<span>Expert Guidance</span>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-flashlight-line text-yellow-500 text-3xl"></i>
+<div>
+<h4 class="font-semibold text-gray-900">Emerging Talent Award</h4>
+<p class="text-gray-600 text-sm">2021</p>
 </div>
 </div>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-sparkling-2-line text-yellow-500 text-3xl"></i>
+<div>
+<h4 class="font-semibold text-gray-900">Quality Leadership Award</h4>
+<p class="text-gray-600 text-sm">Awarded for outstanding contributions to quality management initiatives.</p>
 </div>
+</div>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-vip-crown-line text-yellow-500 text-3xl"></i>
+<div>
+<h4 class="font-semibold text-gray-900">Best Transformation Initiative</h4>
+<p class="text-gray-600 text-sm">Recognized for leading a highly successful enterprise transformation project.</p>
+</div>
+</div>
+<div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+<i class="ri-hand-coin-line text-yellow-500 text-3xl"></i>
+<div>
+<h4 class="font-semibold text-gray-900">Client Excellence Recognition</h4>
+<p class="text-gray-600 text-sm">Appreciated by clients for exceptional service and impactful results.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="contact" class="py-20 bg-gray-50">
+<section id="tools" class="py-20 bg-gray-50 section-divider">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold gradient-text text-center mb-16">Tools, Platforms & Frameworks</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex flex-col items-center text-center">
+        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+            <i class="ri-compasses-line text-blue-700 text-3xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Frameworks</h4>
+        <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">Lean</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">Six Sigma</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">DMAIC</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">DMADV</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">Kaizen</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">TQM</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">VSM</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">RCA</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">OKRs</span>
+            <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs">RACI</span>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex flex-col items-center text-center">
+        <div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mb-4">
+            <i class="ri-projector-line text-green-700 text-3xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Project Management</h4>
+        <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs">Agile</span>
+            <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs">Scrum</span>
+            <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs">Kanban</span>
+            <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs">Waterfall</span>
+            <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs">Hybrid PM</span>
+            <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-xs">PMO Governance</span>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex flex-col items-center text-center">
+        <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full mb-4">
+            <i class="ri-database-2-line text-purple-700 text-3xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Data & Analytics</h4>
+        <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs">Power BI</span>
+            <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs">Tableau</span>
+            <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs">QlikView</span>
+            <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs">Looker Studio</span>
+            <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs">SQL</span>
+            <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-xs">DAX</span>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex flex-col items-center text-center">
+        <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full mb-4">
+            <i class="ri-server-line text-orange-700 text-3xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Platforms</h4>
+        <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-orange-200 text-orange-800 px-3 py-1 rounded-full text-xs">Salesforce</span>
+            <span class="bg-orange-200 text-orange-800 px-3 py-1 rounded-full text-xs">ServiceNow</span>
+            <span class="bg-orange-200 text-orange-800 px-3 py-1 rounded-full text-xs">Jira</span>
+            <span class="bg-orange-200 text-orange-800 px-3 py-1 rounded-full text-xs">Confluence</span>
+            <span class="bg-orange-200 text-orange-800 px-3 py-1 rounded-full text-xs">Asana</span>
+            <span class="bg-orange-200 text-orange-800 px-3 py-1 rounded-full text-xs">Monday.com</span>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex flex-col items-center text-center">
+        <div class="w-16 h-16 flex items-center justify-center bg-red-100 rounded-full mb-4">
+            <i class="ri-customer-service-line text-red-700 text-3xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">CX & QA</h4>
+        <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full text-xs">NICE</span>
+            <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full text-xs">Verint</span>
+            <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full text-xs">CallMiner</span>
+            <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full text-xs">Genesys</span>
+            <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full text-xs">Five9</span>
+            <span class="bg-red-200 text-red-800 px-3 py-1 rounded-full text-xs">Talkdesk</span>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex flex-col items-center text-center">
+        <div class="w-16 h-16 flex items-center justify-center bg-indigo-100 rounded-full mb-4">
+            <i class="ri-robot-line text-indigo-700 text-3xl"></i>
+        </div>
+        <h4 class="font-semibold text-gray-900 mb-2">Automation & AI</h4>
+        <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-xs">VBA</span>
+            <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-xs">UiPath</span>
+            <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-xs">Blue Prism</span>
+            <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-xs">Power Automate</span>
+            <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-xs">GenAI</span>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section id="workshops" class="py-20 bg-white section-divider">
+<div class="max-w-6xl mx-auto px-6">
+<h2 class="text-4xl font-bold gradient-text text-center mb-16">Industry Exposure & Learning</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+        <div class="w-16 h-16 flex items-center justify-center bg-teal-100 rounded-full">
+            <i class="ri-building-line text-teal-700 text-3xl"></i>
+        </div>
+        <div>
+            <h3 class="font-semibold text-gray-900">Process Excellence Summits</h3>
+            <p class="text-gray-600 text-sm">Regular participation in global summits focused on Lean, Six Sigma, and operational efficiency.</p>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+        <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full">
+            <i class="ri-cpu-line text-orange-700 text-3xl"></i>
+        </div>
+        <div>
+            <h3 class="font-semibold text-gray-900">Analytics & AI Conferences</h3>
+            <p class="text-gray-600 text-sm">Attending and contributing to leading conferences on data science, business intelligence, and artificial intelligence.</p>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+        <div class="w-16 h-16 flex items-center justify-center bg-red-100 rounded-full">
+            <i class="ri-macbook-line text-red-700 text-3xl"></i>
+        </div>
+        <div>
+            <h3 class="font-semibold text-gray-900">IT Exhibitions & Trade Shows</h3>
+            <p class="text-gray-600 text-sm">Exploring cutting-edge technologies and networking with innovators in IT and digital transformation.</p>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full">
+            <i class="ri-group-line text-blue-700 text-3xl"></i>
+        </div>
+        <div>
+            <h3 class="font-semibold text-gray-900">Leadership & Quality Forums</h3>
+            <p class="text-gray-600 text-sm">Engaging in discussions and workshops on effective leadership, quality management, and organizational development.</p>
+        </div>
+    </div>
+    <div class="card-3d bg-white p-6 rounded-xl shadow-3d flex items-center space-x-4">
+        <div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full">
+            <i class="ri-book-open-line text-green-700 text-3xl"></i>
+        </div>
+        <div>
+            <h3 class="font-semibold text-gray-900">Professional Workshops</h3>
+            <p class="text-gray-600 text-sm">Hands-on training and skill development in advanced project management, process improvement, and strategic consulting.</p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
 <div class="max-w-4xl mx-auto px-6">
-<h2 class="text-4xl font-bold text-gray-900 text-center mb-16">Get In Touch</h2>
+<h2 class="text-4xl font-bold gradient-text text-center mb-16">Contact Me</h2>
 <div class="grid lg:grid-cols-2 gap-12">
 <div>
-<h3 class="text-xl font-semibold text-gray-900 mb-6">Let's Work Together</h3>
+<h3 class="text-xl font-semibold text-gray-900 mb-6">Let's Connect</h3>
 <p class="text-gray-600 mb-8 leading-relaxed">
-I'm always interested in new opportunities and exciting projects. Whether you're looking for a freelance developer or considering me for a full-time position, I'd love to hear from you.
+Ready to transform your business or accelerate your career? Let's connect and explore how my expertise can drive your success. Reach out for a consultation, collaboration, or any inquiries.
 </p>
 <div class="space-y-4">
 <div class="flex items-center">
@@ -440,7 +792,7 @@ I'm always interested in new opportunities and exciting projects. Whether you're
 </div>
 <div>
 <p class="font-medium text-gray-900">Email</p>
-<p class="text-gray-600">alex.johnson@email.com</p>
+<p class="text-gray-600">contact@sandeepchoudhary.com</p>
 </div>
 </div>
 <div class="flex items-center">
@@ -449,7 +801,7 @@ I'm always interested in new opportunities and exciting projects. Whether you're
 </div>
 <div>
 <p class="font-medium text-gray-900">Phone</p>
-<p class="text-gray-600">+1 (555) 123-4567</p>
+<p class="text-gray-600">+91 98765 43210</p>
 </div>
 </div>
 </div>
@@ -460,11 +812,11 @@ rel="noopener noreferrer"
 class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
 <i class="ri-linkedin-fill"></i>
 </a>
-<a href="https://www.facebook.com/photo.php?fbid=3854091774686857&id=184301401665931&set=a.187396594689745"
+<a href="https://www.instagram.com/choudhary_sandyam/?igsh=MnZya28wZTl5a3k0&utm_source=qr"
 target="_blank"
 rel="noopener noreferrer"
-class="w-10 h-10 flex items-center justify-center bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-<i class="ri-facebook-fill"></i>
+class="w-10 h-10 flex items-center justify-center bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors">
+<i class="ri-instagram-fill"></i>
 </a>
 <a href="https://x.com/Sandeepyam"
 target="_blank"
@@ -472,19 +824,13 @@ rel="noopener noreferrer"
 class="w-10 h-10 flex items-center justify-center bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors">
 <i class="ri-twitter-x-fill"></i>
 </a>
-<a href="https://www.instagram.com/choudhary_sandyam/?igsh=MnZya28wZTl5a3k0&utm_source=qr"
-target="_blank"
-rel="noopener noreferrer"
-class="w-10 h-10 flex items-center justify-center bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors">
-<i class="ri-instagram-fill"></i>
-</a>
-<a href="https://wa.me/+919999999999"
+<a href="https://wa.me/+919876543210"
 target="_blank"
 rel="noopener noreferrer"
 class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
 <i class="ri-whatsapp-fill"></i>
 </a>
-<a href="mailto:sandeep@email.com"
+<a href="mailto:contact@sandeepchoudhary.com"
 class="w-10 h-10 flex items-center justify-center bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
 <i class="ri-mail-fill"></i>
 </a>
@@ -515,7 +861,7 @@ Send Message
 <footer class="bg-gray-900 text-white py-8">
 <div class="max-w-6xl mx-auto px-6">
 <div class="text-center">
-<p class="text-gray-400">© 2024 Alex Johnson. All rights reserved.</p>
+<p class="text-gray-400">© All Rights Reserved | Sandeep Choudhary | 2025–2030</p>
 </div>
 </div>
 </footer>
@@ -537,7 +883,21 @@ mobileMenu.classList.add('hidden');
 <script id="smooth-scroll-script">
 document.addEventListener('DOMContentLoaded', function() {
 const navLinks = document.querySelectorAll('nav a[href^="#"]');
-const ctaButtons = document.querySelectorAll('button');
+const ctaButtons = document.querySelectorAll('a[href^="#"]');
+    ctaButtons.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 navLinks.forEach(link => {
 link.addEventListener('click', function(e) {
 e.preventDefault();
@@ -580,22 +940,52 @@ behavior: 'smooth'
 });
 </script>
 <script id="form-handler-script">
-document.addEventListener('DOMContentLoaded', function() {
-const contactForm = document.querySelector('#contact form');
-contactForm.addEventListener('submit', function(e) {
-e.preventDefault();
-const formData = new FormData(this);
-const name = this.querySelector('input[type="text"]').value;
-const email = this.querySelector('input[type="email"]').value;
-const message = this.querySelector('textarea').value;
-if (name && email && message) {
-alert('Thank you for your message! I\'ll get back to you soon.');
-this.reset();
-} else {
-alert('Please fill in all fields.');
-}
-});
-});
+   document.addEventListener('DOMContentLoaded', function() {
+   const contactForm = document.querySelector('#contact form');
+   contactForm.addEventListener('submit', function(e) {
+   e.preventDefault();
+   const formData = new FormData(this);
+   const name = this.querySelector('input[type="text"]').value;
+   const email = this.querySelector('input[type="email"]').value;
+   const message = this.querySelector('textarea').value;
+   if (name && email && message) {
+   alert('Thank you for your message! I\'ll get back to you soon.');
+   this.reset();
+   } else {
+   alert('Please fill in all fields.');
+   }
+   });
+   });
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      a11y: {
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+      },
+    });
+  });
 </script>
 </body>
-</html>
+</html></div>
